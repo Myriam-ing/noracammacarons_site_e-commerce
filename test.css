@@ -1,0 +1,592 @@
+body{
+    background-color: white;
+}
+
+
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); /* Crée 6 colonnes égales */
+    gap: 0px; /* Espacement entre les éléments */
+}
+
+.image-item {
+    height: 100px; /* Hauteur de chaque image */
+    background-image: url('perso_logo/choc_blanc.png');
+    background-size: cover;
+    background-position: center;
+}
+
+/*partie aboutus*/
+.information {
+    max-width: 800px;
+    margin: 0; /* Enlever l'espace par défaut autour de l'élément */
+    padding: 0; /* Retirer le padding pour coller au conteneur */
+    line-height: 1.6;
+    text-align: justify;
+   
+    margin-left: 10%; /* Espacement à droite de la section texte */
+}
+
+.classes {
+    margin-top: 60px;
+    display: flex; /* Utilisation du flexbox pour aligner le texte et l'image */
+    justify-content: space-between; /* Espace entre le texte et l'image */
+    align-items: flex-start; /* Aligner les éléments en haut */
+   
+}
+
+.plume {
+    display: flex;
+    align-items: center;
+}
+
+.information h5 {
+    font-size: 45px;
+    color: #e67e22;
+    text-transform: uppercase;
+    margin-left: 5%;
+    font-weight: 100px;
+}
+
+#plume {
+    margin-left: 25%;
+}
+
+.information h3 {
+    font-size: 50px;
+    margin-top: 20px;
+    color: #d35400;
+    margin-left: 5%;
+}
+
+.information p {
+    font-size: 30px;
+}
+
+#enum {
+    font-size: 27px;
+}
+
+#femme_panier {
+     margin-top: 5%;
+    width: 850px; /* Modifier la taille de l'image pour ajuster la mise en page */
+    margin-right: 10%; /* Centrer l'image à droite */
+}
+
+
+/* NOS MACARONS FAVORIS */
+
+.products {
+    margin-bottom: 150px; /* Ajouter de l'espace après cette section */
+}
+
+.premiere{
+    display: flex;
+    align-items: center;
+    padding: 20px 20px;
+    justify-content: center;
+    height: 35rem;
+    width: 100%;
+    position: relative;
+}
+
+.deuxieme{
+    display: flex;
+    align-items: center;
+    padding: 20px 30px;
+    justify-content: center;
+    height: 35rem;
+    width: 100%;
+    position: relative;
+}
+
+.mama {
+    border: 2px solid #d35400;
+    background: rgb(255, 255, 255);
+    display: flex;
+    border-radius: 32%;
+    align-items: center; /* Centre verticalement */
+    justify-content: center; /* Centre horizontalement */
+    height: 30rem;
+    width: 30rem;
+    overflow: hidden;
+    position: relative;
+    user-select: none;
+    margin: 1rem; /* Ajoute un espace autour de chaque .mama */
+}
+
+.mama:hover .content{
+    transform: translateY(0);
+}
+
+.product .mama img{
+    box-shadow: #1a0d05;
+    box-shadow: inset;
+    align-items: center;
+    transition: .2s linear;
+    object-fit: cover;
+    margin-bottom: 0%;
+}
+
+.mama:hover img{
+    transform: scale(1.1);
+}
+
+.content{
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(.5rem);
+    padding: 2rem;
+    text-align: center;
+    transition: .2s linear;
+    transform: translateY(calc(100% - 6.5rem));
+}
+
+.heading{
+    margin-left: 32%;
+    font-size: 100px;
+    font-weight: 50px;
+    color: #d35400;
+}
+
+#image1{
+    width: 255px;
+}
+
+.content h3{
+    margin-top: 0;
+    font-size: 2rem;  
+    color: #d35400;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+    text-align: center;
+    font-weight: 100px;
+}
+
+.content p{
+    font-size: 1.8rem;
+    color: #1a0d05;
+    padding: 1rem 0;
+    line-height: 2;
+}
+
+/* SECTION BOITES & ILLUSTRATIONS - Correction hauteur et marges */
+.boites_illustration{
+    /* Supprimer la hauteur fixe et ajouter de l'espace en haut */
+    margin-top: 150px;
+    width: 100%;
+    /* On retire la hauteur fixe qui cause le problème */
+    overflow: hidden; /* Contenir tous les éléments flottants */
+    padding-bottom: 150px; /* Ajouter de l'espace en bas de la section */
+}
+
+.heading_boites_illu{
+    margin-top: 60px;
+    margin-bottom: 50px; /* Plus d'espace sous le titre principal */
+    text-align: center;
+    font-size: 100px;
+    font-weight: 50px;
+    color: #d35400;
+}
+
+/* BOITES */
+.boites{
+    margin-top: 100px;
+    width: 100%;
+    margin-bottom: 150px; /* Plus d'espace entre boites et illustrations */
+}
+
+.heading_boites{
+    text-align: center;
+    text-transform: uppercase;
+    color: black;
+    margin-bottom: 1rem;
+    font-size: 3.5rem;
+}
+
+.boites .slide{
+    height: 21rem;
+    overflow: hidden;
+    justify-content: center;
+    position: relative;
+    user-select: none;
+    width: 350px;
+    transition: .2s linear;
+    border: 2px solid #dba362e1;
+    margin-bottom: 1rem;
+    border-radius: 30px;
+}
+
+.boites .slide img{
+    margin-top: 15px;
+    margin-left: 40px;
+    object-fit: cover;
+    box-shadow: #1a0d05;
+    box-shadow: inset;
+}
+
+.boites .slide:hover img{
+    transform: scale(1.1);
+}
+
+.boites .slide:hover .content{
+    transform: translateY(0);
+}
+
+.boites .slide .content{
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(.5rem);
+    padding: 2rem;
+    text-align: center;
+    transition: .2s linear;
+    transform: translateY(calc(100% - 6.5rem));
+}
+
+.boites .slide .content h3{
+    font-size: 1.6rem;
+    color: #b4752d;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+}
+
+.boites .slide .content p{
+    font-size: 1.5rem;
+    font-weight: 2px;
+    color: black;
+    padding: 1rem 0;
+    line-height: 2;
+}
+
+.boites .slide .content button{
+    width: 240px;
+    height: 45px;
+    border-radius: 25px;
+    background: #ffffffc2;
+    border-color: #da974bc9;
+    cursor: pointer;
+}
+
+.boites .slide .content button:hover{
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: #da974bc9;
+}
+
+.boites .slide .content a{
+    font-size: 25px;
+    text-decoration: none;
+    color: black;
+}
+
+.boites .slide .content a:hover{
+    color: #da974bc9;
+}
+
+.boites p{
+    text-align: center;
+    color: black;
+    margin-bottom: 2.7rem;
+    font-size: 2rem;   
+}
+
+/* ILLUSTRATIONS */
+.illustration{
+    width: 100%;
+    margin-bottom: 20px; /* Espace après les illustrations */
+}
+
+.illustration p{
+    text-align: center;
+    color: black;
+    margin-bottom: 3rem;
+    font-size: 2rem; 
+}
+
+.heading_illustration{
+    text-align: center;
+    text-transform: uppercase;
+    color: black;
+    margin-bottom: 4rem;
+    font-size: 3.5rem;
+}
+
+.illustration .slide{
+    height: 19rem;
+    overflow: hidden;
+    justify-content: center;
+    position: relative;
+    user-select: none;
+    width: 320px;
+    transition: .2s linear;
+    border: 2px solid #dba362e1;
+    margin-bottom: 4rem;
+    border-radius: 30px;
+}
+
+.illustration .slide img{
+    width: 450px;
+    object-fit: cover;
+    box-shadow: #1a0d05;
+    box-shadow: inset;
+}
+
+.illustration .slide:hover img{
+    transform: scale(1.1);
+}
+
+.illustration .slide:hover .content{
+    transform: translateY(0);
+}
+
+.illustration .slide .content{
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(.5rem);
+    padding: 2rem;
+    text-align: center;
+    transition: .2s linear;
+    transform: translateY(calc(100% - 6.5rem));
+}
+
+.illustration .slide .content h3{
+    font-size: 1.6rem;
+    color: #b4752d;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+.illustration .slide .content button{
+    width: 240px;
+    height: 45px;
+    border-radius: 25px;
+    background: #ffffffc2;
+    border-color: #da974bc9;
+    cursor: pointer;
+}
+
+.illustration .slide .content button:hover{
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: #da974bc9;
+}
+
+.illustration .slide .content a{
+    font-size: 25px;
+    text-decoration: none;
+    color: black;
+}
+
+.illustration .slide .content a:hover{
+    color: #da974bc9;
+}
+
+#without{
+    width: 150px;
+    height: 150px;
+    margin-top: 30px;
+    margin-left: 140px;
+}
+
+/* PARTIE PRODUITS */
+.produits {
+    clear: both; /* S'assurer que cette section commence après toutes les précédentes */
+    margin-top: 60px; /* Espace au-dessus de la section */
+}
+
+.produits h1{
+    margin-top: 60px;
+    margin-bottom: 3rem;
+    text-align: center;
+    font-size: 100px;
+    font-weight: 50px;
+    color: #d35400;
+}
+
+.produits p{
+    text-align: center;
+    color: black;
+    margin-bottom: 3rem;
+    font-size: 2rem; 
+}
+
+.fruits_rouges{
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: space-between;
+    height: 900px;
+    width: 100%;
+    padding: auto;
+    background: #fccf6e46;
+}
+
+.fruits_rouges .image img{
+    width: 800px;
+    height: 800px;
+    border-radius: 140px;
+    margin-right: 160px;
+    box-shadow: 50%;
+}
+
+.fruits_rouges .image:hover img{
+    transform: scale(1.1);
+}
+
+.fruits_rouges .text{
+    margin-top: 30px;
+    background-color: rgba(255, 255, 255, 0.596);
+    backdrop-filter: blur(100px);
+    border: 1px solid #b4844d;
+    width: 1200px;
+    height: 520px;
+    border-radius: 5px;
+    margin-left: 120px;
+    text-align: center;
+}
+
+.fruits_rouges .text h3{
+    font-size: 60px;
+    color: #e67e22;
+    text-transform: uppercase;
+    font-weight: 20px;
+}
+
+.fruits_rouges .text p{
+    font-size: 1.8rem;
+}
+
+.fruits_rouges .text .bouton{
+    font-size: 25px;
+    transition: 0.2s linear;
+    width: 260px;
+    height: 50px;
+    border-radius: 25px;
+    background: #ffffffc2;
+    color: #da974b;
+    border-color: #da974bc9;
+    cursor: pointer;
+}
+
+.mac_chocolat{
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: space-between;
+    height: 900px;
+    width: 100%;
+    padding: auto;
+    background: #fccf6e46;
+}
+
+.mac_chocolat .image img{
+    width: 800px;
+    height: 800px;
+    border-radius: 140px;
+    margin-right: 160px;
+    box-shadow: 50%;
+}
+
+.mac_chocolat .image:hover img{
+    transform: scale(1.1);
+}
+
+.mac_chocolat .text{
+    margin-top: 30px;
+    background-color: rgba(255, 255, 255, 0.596);
+    backdrop-filter: blur(100px);
+    border: 1px solid #b4844d;
+    width: 1200px;
+    height: 520px;
+    border-radius: 5px;
+    margin-left: 120px;
+    text-align: center;
+}
+
+.mac_chocolat .text h3{
+    font-size: 60px;
+    color: #e67e22;
+    text-transform: uppercase;
+    font-weight: 20px;
+}
+
+.mac_chocolat .text p{
+    font-size: 1.8rem;
+}
+
+.mac_chocolat .text .bouton{
+    font-size: 25px;
+    transition: 0.2s linear;
+    width: 260px;
+    height: 50px;
+    border-radius: 25px;
+    background: #ffffffc2;
+    color: #da974b;
+    border-color: #da974bc9;
+    cursor: pointer;
+}
+
+.mac_agrumes{
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: space-between;
+    height: 900px;
+    width: 100%;
+    padding: auto;
+}
+
+.mac_agrumes .image img{
+    width: 800px;
+    height: 800px;
+    border-radius: 140px;
+    margin-left: 160px;
+    box-shadow: 50%;
+}
+
+.mac_agrumes .image:hover img{
+    transform: scale(1.1);
+}
+
+.mac_agrumes .text{
+    margin-top: 30px;
+    background-color: rgba(255, 255, 255, 0.596);
+    backdrop-filter: blur(100px);
+    border: 1px solid #b4844d;
+    width: 1200px;
+    height: 520px;
+    border-radius: 5px;
+    margin-right: 120px;
+    text-align: center;
+}
+
+.mac_agrumes .text h3{
+    font-size: 60px;
+    color: #e67e22;
+    text-transform: uppercase;
+    font-weight: 20px;
+}
+
+.mac_agrumes .text p{
+    font-size: 1.8rem;
+}
+
+.mac_agrumes .text .bouton{
+    font-size: 25px;
+    transition: 0.2s linear;
+    width: 260px;
+    height: 50px;
+    border-radius: 25px;
+    background: #ffffffc2;
+    color: #da974b;
+    border-color: #da974bc9;
+    cursor: pointer;
+}
+
+.produits .bouton:hover{
+    color: #000000;
+    background: rgba(255, 255, 255, 0.658);
+    backdrop-filter: blur(30px);
+}

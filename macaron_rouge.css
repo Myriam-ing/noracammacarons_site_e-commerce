@@ -1,0 +1,133 @@
+.cover_rouge{
+    background: url('mac/red_fruits.jpg') no-repeat center/cover;
+    background-size: cover;
+    height: 25vh;
+    background-position: center;
+    margin-top: 10px;
+}
+.cover_overlay{
+    background-color: rgba(0, 0, 0, 0.432);
+    height: 100%;
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 10px;
+
+}
+.cover_overlay h1{
+    margin-top: 20px;
+    font-size: 80px;
+    margin-bottom: 0%;
+}
+.cover_overlay span{
+    font-size: 50px;
+}
+.fruits_rouge{
+    width: 2000px ;
+    background: #fadc7a77;
+    height: auto;
+    margin-left: 300px;
+    display:list-item;
+    margin-bottom: 150px;
+    margin-top: 220px;
+    
+}
+
+
+
+.card--list{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+  
+    margin-bottom: 2rem;
+   
+   
+}
+.card{
+    width: 280px;
+    margin-right: 150px;
+    margin-bottom: 80px;
+    margin-left: 180px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 1rem;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    color: #e67e22;
+}
+.card img{
+    width: 100%;
+    margin-top: 10px;
+
+}
+.fruits_rouge h2{
+    margin-top: 80px;
+    margin-bottom: 100px;
+    display: flex;
+    align-items: center;
+    font-size: 80px;
+    justify-content: center;
+    color: #b9661d;
+}
+.card--price{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    
+    justify-content: space-between;
+}
+.card--price .price{
+    color: #b87945;
+    font-weight: 600;
+    font-size: 30px;
+}
+.add-to-card{
+    background-color: #e67e22;
+    border-radius: 50%;
+    color: white;
+    padding: 5px;
+    cursor: pointer;
+    font-size: 30px;
+}
+.card--title{
+    font-size: 38px;
+    margin-bottom: 0%;
+}
+.add-to-card:hover{
+    color: white;
+    box-shadow: rgb(0 0 0 /30%) 0px 4px 4px ,rgb(231,236, 236) 0px 0px 0px 3px;
+}
+.fa-circle-info{
+    background-color: white;
+    border-radius: 50%;
+    color: #e67e22;;
+    padding: 4.5px;
+    cursor: pointer;
+    font-size: 40px;
+    margin-left: 240px;
+}
+.fa-circle-info:hover{
+    
+    box-shadow: rgb(0 0 0 /30%) 0px 4px 4px ,rgb(231,236, 236) 0px 0px 0px 3px;
+}
+.fa-minus{
+    background-color:white;
+    border-radius: 50%;
+    color: #e67e22;
+    padding: 4.5px;
+    cursor: pointer;
+    font-size: 30px;
+    border: 1.5px solid #e67e22;
+    margin-left: 70px;
+}
+.fa-minus:hover{
+    
+    box-shadow: rgb(0 0 0 /30%) 0px 4px 4px ,rgb(231,236, 236) 0px 0px 0px 3px;
+}
